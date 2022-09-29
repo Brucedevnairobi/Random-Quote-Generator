@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(21, 34, 1);
+    color: white;
+}
+
+.wrapper {
+    width: 605px;
+    background: magenta;
+    border-radius: 15px;
+    padding: 30px 30px 30px 30px;
+}
+
+.wrapper header {
+   font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+   /*animation: animated-text 4s steps(16)
+    1s 1 normal both,
+    animated-cursor 500ms steps(16)
+     infinite normal;*/
+}
+
+.wrapper .content {
+    margin: 35px 0;
+}
+
+.content .quote-area{
+    display: flex;
+    justify-content: center;
+}
+
+.quote-area i{
+    font-size: 15px;
+}
+
+.quote-area i:first-child {
+    margin: 3px 10px 0 0;
+}
+
+.quote-area i:last-child{
+   /* display: flex;
+    align-items: flex-end;*/
+}
+
+.quote-area .quote {
+    font-size: 22px;
+    text-align: center;
+    word-break: break-all;
+}
+
+.content .author{
+    display: flex;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 20px;
+    justify-content: flex-end;
+}
+
+.author span:first-child{
+    margin: -7px 5px 0 0;
+    font-family: monospace;
+}
+
+.wrapper .buttons{
+border-top: 1px solid rgb(189, 166, 166);
+}
+
+.buttons .features {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.features ul{
+    display: flex;
+}
+
+.features ul li{
+    list-style: none;
+    margin: 0 5px;
+    height: 47px;
+    width: 47px;
+    display: flex;
+    color: rgb(189, 166, 166);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgb(189, 166, 166);
+}
+
+.features ul li:hover{
+    color: magenta;
+    background: rgb(189, 166, 166);
+}
+
+button {
+    border: none;
+    outline: 1px solid rgb(168, 18, 168);
+    padding: 13px 22px;
+    background: rgb(189, 166, 166);
+    color: magenta;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 30px;
+    
+}
+
+button:hover{
+    background: magenta;
+    color: rgb(189, 166, 166);
+}
+
+button .loading{
+    opacity: 0.7;
+    pointer-events: none;
+}
